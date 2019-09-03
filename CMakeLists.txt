@@ -59,7 +59,7 @@ STRING(STRIP "${CMAKE_C_FLAGS}" CMAKE_C_FLAGS)
 IF (CMAKE_C_COMPILER_ID MATCHES "MSVC")
     SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} /Wall")
 ELSE ()
-    SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wextra -Wall -Wstrict-prototypes -std=c99 -pipe")
+    SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wextra -Wall -Wstrict-prototypes -std=c99 -fgnu89-inline -pipe")
 ENDIF ()
 SET(CMAKE_C_FLAGS_${CMAKE_BUILD_TYPE} "")
 
