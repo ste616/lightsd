@@ -71,15 +71,39 @@ lgtd_lifx_bulb_get_model_name(uint32_t vendor_id, uint32_t product_id)
     case 0x16:
         return "Color 1000";
     case 0x1b:
+    case 0x2b:
         return "A19";
     case 0x1c:
+    case 0x2c:
         return "BR30";
     case 0x1d:
+    case 0x2d:
         return "A19+";
     case 0x1e:
+    case 0x2e:
         return "BR30+";
     case 0x1f:
         return "Z";
+    case 0x20:
+	return "Z2";
+    case 0x24:
+    case 0x25:
+	return "Downlight";
+    case 0x26:
+	return "Beam";
+    case 0x31:
+    case 0x3b:
+	return "Mini";
+    case 0x32:
+    case 0x3c:
+	return "Mini Day and Dusk";
+    case 0x33:
+    case 0x3d:
+	return "Mini White";
+    case 0x34:
+	return "GU10";
+    case 0x37:
+	return "Tile";
     default:
         return "Unknown";
     }
